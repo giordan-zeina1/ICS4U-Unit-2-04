@@ -32,9 +32,10 @@ public final class GiordanStack {
     /**
      * @return Prints String at the top of the Stack.
      */
-    public ArrayList<String> peekItem() {
-        return stringList[0];
-    }
+    public String peekItem() {
+        return stringList.get(0);
+        }
+
 
     /**
      * @return Prints our Stack of Strings.
