@@ -14,7 +14,7 @@ public final class GiordanStack {
     private ArrayList<String> stringList = new ArrayList<>();
 
     /**
-     * A brief description of what the method does (first sentence is key).
+     * Adds item to the top of the stack.
      *
      * @param pushItem adds to the top of the stack.
      */
@@ -34,7 +34,7 @@ public final class GiordanStack {
      */
     public String peekItem() {
         return stringList.get(0);
-        }
+    }
 
 
     /**
@@ -51,6 +51,9 @@ public final class GiordanStack {
         return stringList.size();
     }
 
+    /**
+     * Clears the stack.
+     */
     public void clearStack() {
         System.out.println("Empting the stack ...");
         stringList.clear();

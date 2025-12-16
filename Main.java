@@ -49,52 +49,42 @@ public final class Main {
         System.out.println("Is the stack empty: " + fruitStack.isEmpty());
 
         GiordanStack colorStack = new GiordanStack();
+        System.out.println("\nColor Items: " + colorStack.getItem());
+        System.out.println("The size of the stack is: " + fruitStack.getSize());
+        System.out.println("Is the stack empty: " + colorStack.isEmpty());
         colorStack.pushItem("red");
         colorStack.pushItem("green");
         colorStack.pushItem("blue");
-        System.out.println("\nColor Items: " + colorStack.getItem());
-        System.out.println("The size of the stack is: " + colorStack.getSize());
-        System.out.println("Is the stack empty: ");
-        colorStack.isEmpty();
         System.out.println("Color Items: " + colorStack.getItem());
-        System.out.println("Popped fruit items: ");
-        colorStack.popItem();
+        System.out.println("Popped color items: " + colorStack.popItem());
         System.out.println("Color Items: " + colorStack.getItem());
         System.out.println("The size of the stack is: " + colorStack.getSize());
-        System.out.println("Is the stack empty: ");
-        colorStack.isEmpty();
-        System.out.println("The top Color is: " + colorStack.getItem());
+        System.out.println("Is the stack empty: " + colorStack.isEmpty());
+        System.out.println("The top color is: " + colorStack.peekItem());
         System.out.println("The size of the stack is: " + colorStack.getSize());
-        colorStack.isEmpty();
+        colorStack.clearStack();
         System.out.println("The size of the stack is: " + colorStack.getSize());
-        System.out.println("Is the stack empty: ");
-        colorStack.isEmpty();
+        System.out.println("Is the stack empty: " + colorStack.isEmpty());
 
         GiordanStack dogStack = new GiordanStack();
+        System.out.println("\nDog Items: " + dogStack.getItem());
+        System.out.println("The size of the stack is: " + fruitStack.getSize());
+        System.out.println("Is the stack empty: " + dogStack.isEmpty());
         dogStack.pushItem("poodle");
         dogStack.pushItem("retriever");
         dogStack.pushItem("beagle");
-        System.out.println("\nDog Items: " + dogStack.getItem());
-        System.out.println("The size of the stack is: " + dogStack.getSize());
-        System.out.println("Is the stack empty: ");
-        dogStack.isEmpty();
         System.out.println("Dog Items: " + dogStack.getItem());
-        System.out.println("Popped fruit items: ");
-        dogStack.popItem();
+        System.out.println("Popped dog items: " + dogStack.popItem());
         System.out.println("Dog Items: " + dogStack.getItem());
         System.out.println("The size of the stack is: " + dogStack.getSize());
-        System.out.println("Is the stack empty: ");
-        dogStack.isEmpty();
-        System.out.println("The top Dog is: " + dogStack.getItem());
+        System.out.println("Is the stack empty: " + dogStack.isEmpty());
+        System.out.println("The top dog is: " + dogStack.peekItem());
         System.out.println("The size of the stack is: " + dogStack.getSize());
-        dogStack.isEmpty();
+        dogStack.clearStack();
         System.out.println("The size of the stack is: " + dogStack.getSize());
-        System.out.println("Is the stack empty: ");
-        dogStack.isEmpty();
+        System.out.println("Is the stack empty: " + dogStack.isEmpty());
 
-        dogStack.popItem();
-
-        System.out.println("\nDone");
+        System.out.println("\nDone.");
         scanner.close();
     }
 }
